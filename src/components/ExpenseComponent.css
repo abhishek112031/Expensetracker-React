@@ -1,0 +1,6 @@
+.items{
+    display: flex;
+    justify-content: center;
+    background-color: #870bda;
+    margin-bottom: 10px;
+}
