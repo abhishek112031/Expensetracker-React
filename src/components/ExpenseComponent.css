@@ -39,6 +39,7 @@
 
   .location{
     margin-left: 1rem;
+    color: aqua;
   }
   
   @media (min-width: 580px) {
