@@ -41,8 +41,14 @@
     margin-left: 1rem;
     color: aqua;
   }
+
+  .maindiv{
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+  }
   
-  @media (min-width: 580px) {
+  @media (min-width: 380px) {
     .expense-item__description {
       flex-direction: row;
       align-items: center;

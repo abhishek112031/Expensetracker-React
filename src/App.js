@@ -33,7 +33,7 @@ function App() {
   ];
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <h2 className='heading'>Let's get started!</h2>
       <ExpenseComponent items={expenses}/>
    
     </div>
