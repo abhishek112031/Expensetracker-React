@@ -1,22 +1,17 @@
 
 import './ExpenseComponent.css'
 function ExpenseComponent() {
+    const expenseDate=new Date(2023,7,30);
+    const expenseTitle='Petrol';
+    const expenseAmount=100;
     return (
-        <div>
-            <h2>Expense item!</h2>
-            <div className="items">
-                <div>Food</div>
-                <div>RS: 10</div>
+        <div className='expense-item'>
+            <div>{expenseDate.toDateString()}</div>
+          
+            <div className="expense-item__description">
+                <h2>{expenseTitle}</h2>
+                <div className='expense-item__price'>RS: {expenseAmount}</div>
             </div>
-            <div className="items">
-                <div>Petrol</div>
-                <div>RS: 100</div>
-            </div>
-            <div className="items">
-                <div>Movies</div>
-                <div>RS: 200</div>
-            </div>
-
 
         </div>
     )
