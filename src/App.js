@@ -1,4 +1,7 @@
-import ExpenseComponent from './components/ExpenseCpmponent'
+// import ExpenseComponent from './components/ExpenseCpmponent'
+import Expenses from './components/Expenses'
+
+
 
 function App() {
   const expenses= [
@@ -34,7 +37,8 @@ function App() {
   return (
     <div>
       <h2 className='heading'>Let's get started!</h2>
-      <ExpenseComponent items={expenses}/>
+      {/* <ExpenseComponent items={expenses}/> */}
+      <Expenses items={expenses}/>
    
     </div>
   );
@@ -42,14 +46,4 @@ function App() {
 
 export default App;
 
-//looping:
-// return (
-//   <div>
-//     <h1>List of Items</h1>
-//     <ul>
-//       {data.map((item, index) => (
-//         <li key={index}>{item}</li>
-//       ))}
-//     </ul>
-//   </div>
-// );
+
