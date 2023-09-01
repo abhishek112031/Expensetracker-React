@@ -4,7 +4,7 @@ import './ExpenseComponent.css';
 import Card from '../UI/Card';
 import ExpenseDate from './ExpenseDate';
 
-function ExpenseComponent(props) {
+const  ExpenseComponent=(props) =>{
 
     //looping:
     // return (

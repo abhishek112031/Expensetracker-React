@@ -2,7 +2,7 @@ import './Expenses.css'
 import ExpenseComponent from './ExpenseCpmponent';
 import Card from '../UI/Card';
 
-function Expenses(props) {
+const Expenses=(props) =>{
 
     // return (
     //     <div className="expense-item__description">
