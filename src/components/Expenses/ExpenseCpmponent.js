@@ -6,6 +6,8 @@ import ExpenseDate from './ExpenseDate';
 
 const  ExpenseComponent=(props) =>{
     const [title,setTitle]=useState(props.title)
+    const [price,setPrice]=useState(props.amount)
+
 
     //looping:
     // return (
@@ -23,9 +25,13 @@ const  ExpenseComponent=(props) =>{
     //     </div>
     // );
 
-    const clickHandeller=()=>{
+    const titleChangeClickHandeller=()=>{
         setTitle('updated!')
         console.log('button is clicked!!!',title)
+    }
+    const priceChangeClickHandeller=()=>{
+        setPrice('100')
+        console.log('button is clicked!!!',price)
     }
     return (
         <Card className='expense-item'>
@@ -33,11 +39,16 @@ const  ExpenseComponent=(props) =>{
            <div className='expense-item__description'>
                 <h4 className='location'>{props.LocationOfExpenditure}</h4>
                 <h2>{title}</h2>
-                <div className='expense-item__price'>₹{props.amount}</div>
+                <div className='expense-item__price'>₹{price}</div>
            </div>
-           <button onClick={clickHandeller}>change Title</button>
+           <button onClick={titleChangeClickHandeller}>change Title</button>
+           <button onClick={priceChangeClickHandeller}>change price</button>
+
         </Card>
     )
 }
 
 export default ExpenseComponent;
+
+//react state:useState:
+//if you have data that might change,tht should reflect to the user interface,then we need state by re evaluating the component in which we registered state:useState
