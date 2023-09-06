@@ -3,19 +3,41 @@ import './ExpenseForm.css';
 
 const ExpenseForm = () => {
     //state:
-    const [enteredTitle,setEnteredTitle]=useState('');
-    const [enteredAmount,setEnteredAmount]=useState('');
-    const [enteredDate,setEnteredDate]=useState('');
+    // const [enteredTitle,setEnteredTitle]=useState('');
+    // const [enteredAmount,setEnteredAmount]=useState('');
+    // const [enteredDate,setEnteredDate]=useState('');
+
+    //using single state:
+    const [userInput,setUserInput]=useState({
+        enteredTitle:"",
+        enteredAmount:"",
+        enteredDate:""
+    })
     
     // handellers:
     const titleChangeHandeller=(event)=>{
-        setEnteredTitle(event.target.value);
+        setUserInput({
+            ...userInput,
+            enteredDate:event.target.value
+
+        })
+        // setEnteredTitle(event.target.value);
     }
     const amountChangeHandeller=(event)=>{
-        setEnteredAmount(event.target.value)
+        setUserInput({
+            ...userInput,
+            enteredAmount:event.target.value
+
+        })
+        // setEnteredAmount(event.target.value)
     }
     const dateChangeHandeller=(event)=>{
-        setEnteredDate(event.target.value);
+        setUserInput({
+            ...userInput,
+            enteredDate:event.target.value
+
+        })
+        // setEnteredDate(event.target.value);
     }
     
     return (
