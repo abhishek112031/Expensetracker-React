@@ -3,6 +3,7 @@
 import React from 'react';
 
 import Expenses from './components/Expenses/Expenses'
+import NewExpense from './components/NewExpense/NewExpense';
 
 
 
@@ -41,7 +42,7 @@ const  App=()=> {
   //modern syntax:
   return (
     <div>
-      <h2 className='heading'>Let's get started!</h2>
+      <NewExpense/>
       {/* <ExpenseComponent items={expenses}/> */}
       <Expenses items={expenses}/>
 

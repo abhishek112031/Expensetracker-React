@@ -6,7 +6,7 @@ import ExpenseDate from './ExpenseDate';
 
 const  ExpenseComponent=(props) =>{
     const [title,setTitle]=useState(props.title)
-    const [price,setPrice]=useState(props.amount)
+    // const [price,setPrice]=useState(props.amount)
 
 
     //looping:
@@ -29,20 +29,19 @@ const  ExpenseComponent=(props) =>{
         setTitle('updated!')
         console.log('button is clicked!!!',title)
     }
-    const priceChangeClickHandeller=()=>{
-        setPrice('100')
-        console.log('button is clicked!!!',price)
-    }
+    // const priceChangeClickHandeller=()=>{
+    //     setPrice('100')
+    //     console.log('button is clicked!!!',price)
+    // }
     return (
         <Card className='expense-item'>
            <ExpenseDate date={props.date}/>
            <div className='expense-item__description'>
-                <h4 className='location'>{props.LocationOfExpenditure}</h4>
                 <h2>{title}</h2>
-                <div className='expense-item__price'>₹{price}</div>
+                <div className='expense-item__price'>₹{props.amount}</div>
            </div>
            <button onClick={titleChangeClickHandeller}>change Title</button>
-           <button onClick={priceChangeClickHandeller}>change price</button>
+           {/* <button onClick={priceChangeClickHandeller}>change price</button> */}
 
         </Card>
     )
