@@ -8,7 +8,7 @@ const  ExpenseComponent=(props) =>{
     const [title,setTitle]=useState(props.title)
     // const [price,setPrice]=useState(props.amount)
 
-//git comments:
+//git comments:react changes:
     //looping:
     // return (
     //     <div className='maindiv'>
